@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('image2.png');
+    background-size: cover;
+}
+
+    /* Mengatur container untuk tata letak berdampingan */
+.container {
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: space-between; /* Memberikan jarak di antara elemen */
+    gap: 35px; /* Jarak antar section */
+    padding: 20px;
+    max-width: 2000px; /* Lebar maksimum container */
+    margin: 0 auto; /* Memusatkan container */
+}
+
+/* Gaya untuk setiap section */
+.container section {
+    flex: 1; /* Membuat section memiliki ukuran yang sama */
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(108, 108, 108, 0.966);
+    text-align: left;
+}
+
+/* Jika ingin mengatur lebar spesifik */
+.container section:nth-child(1) {
+    flex: 1; /* Section pertama lebih besar */
+}
+
+.container section:nth-child(2) {
+    flex: 1; /* Section kedua lebih kecil */
+}
+
+   
+   header {
+    background-color: #333;
+    color: #ff7f00;
+    padding: 20px;
+    text-align: center;
+   }
+   
+   header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   header nav ul li {
+    margin-right: 20px;
+   }
+   
+   header nav a {
+    color: #ffff;
+    text-decoration: none;
+   }
+   
+   main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+   }
+   
+   section {
+    background-color: #ffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(108, 108, 108, 0.966);
+    border-radius: 10px;
+   }
+   
+   h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+   }
+   
+   button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+   }
+   
+   .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   
+   .gallery img {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 10px;
+   }
+   
+   footer {
+    background-color: #333;
+    color: #ffff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+   }
+   
